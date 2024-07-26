@@ -1,6 +1,8 @@
 # Modification
 * use proxy in tauri app 
 * * https://github.com/samply/RoomBookingTauriApp
+* this ist a submodul tho be used in tauri as Room booking system
+* https://github.com/samply/RoomBookingTauriApp/tree/main
 * 
 --
 ![Logo](./doc/Logo.svg) <!-- TODO: New Logo -->
