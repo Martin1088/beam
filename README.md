@@ -1,3 +1,8 @@
+# Modification
+* use proxy in tauri app 
+* * https://github.com/samply/RoomBookingTauriApp
+* 
+--
 ![Logo](./doc/Logo.svg) <!-- TODO: New Logo -->
 
 [![Build with rust and docker](https://github.com/samply/beam/actions/workflows/rust.yml/badge.svg)](https://github.com/samply/beam/actions/workflows/rust.yml)
