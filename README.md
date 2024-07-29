@@ -11,9 +11,9 @@
 
 Samply.Beam is a distributed task broker designed for efficient communication across strict network environments. It provides most commonly used communication patterns across strict network boundaries, end-to-end encryption and signatures, as well as certificate management and validation on top of an easy to use REST API. In addition to task/response semantics, Samply.Beam supports high-performance applications with encrypted low-level direct socket connections.
 
-## Latest version: Samply.Beam 0.7.0 – 2023-10-04
+## Latest version: Samply.Beam 0.8.0 – 2024-07-26
 
-This new version introduces many new features, such as direct socket connections, improved certificate caching and health monitoring for the Proxy (via a long-lived control connection) and the Broker. As indicated by the [major version change](https://semver.org/), some breaking changes have been introduced. Please check the [Changelog](CHANGELOG.md) for details.
+This new major version includes some bugfixes, dependency upgrades and improvements to `beam-lib`. Please check the [Changelog](CHANGELOG.md) for details.
 
 Find info on all previous versions in the [Changelog](CHANGELOG.md).
 
@@ -531,7 +531,7 @@ Initialize a socket connection with an Beam application, e.g. with AppId `app2.p
 Method: `POST`  
 URL: `/v1/sockets/<app_id>`  
 Header `Upgrade` is required, e.g. 'Upgrade: tls'
-Optionally takes a `metadata` header which is expected to be serialized json value.
+Optionally takes a `metadata` header which is expected to be a serialized json value.
 This corresponds to the `metadata` field on [Socket task](#socket-task).
 
 This request will automatically lead to a connection to the other app, after it answers this request.
