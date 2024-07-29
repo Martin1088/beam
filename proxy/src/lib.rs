@@ -28,8 +28,8 @@ mod serve_sockets;
 
 pub(crate) const PROXY_TIMEOUT: u64 = 120;
 
-#[tokio::main]
-pub async fn main() -> anyhow::Result<()> {
+
+pub async fn proxy_run() -> anyhow::Result<()> {
     shared::config::prepare_env();
     shared::logger::init_logger()?;
     banner::print_banner();

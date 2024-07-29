@@ -1,7 +1,7 @@
 # Modification
-* use proxy in tauri app 
+* use proxy in Tauri app 
 * * https://github.com/samply/RoomBookingTauriApp
-* this ist a submodul tho be used in tauri as Room booking system
+* this is a submodule to be used in Tauri as Room booking system
 * https://github.com/samply/RoomBookingTauriApp/tree/main
 * 
 --

@@ -1,5 +1,5 @@
 [package]
-name = "beam-proxy"
+name = "proxy_connect"
 version = "0.7.0"
 edition = "2021"
 license = "Apache-2.0"
@@ -7,10 +7,15 @@ documentation = "https://github.com/samply/beam"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# use proxy as library 
+[lib]
+name= "proxy_connect"
+path = "src/lib.rs"
+
 [dependencies]
 shared = { path = "../shared", features = ["config-for-proxy"] }
-beam-lib = { workspace = true }
-
+# beam-lib = { workspace = true }
+beam-lib = { git = "https://github.com/samply/beam", branch = "develop", features = ["http-util"] }
 tokio = { version = "1", features = ["full"] }
 async-recursion = "1.0.0"
 axum = { version = "0.6", features = ["macros"] }
