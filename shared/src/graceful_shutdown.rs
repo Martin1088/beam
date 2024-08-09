@@ -1,5 +1,5 @@
 use std::time::Duration;
-
+#[cfg(unix)]
 use tokio::signal::unix::{signal, SignalKind};
 use tracing::info;
 
